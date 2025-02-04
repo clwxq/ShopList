@@ -1,0 +1,29 @@
+﻿<Window x:Class="ShopList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShopList"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="181*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="528*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <Label Content="Zadej Item:" FontSize="24"  Margin="10"/>
+            <TextBox x:Name="TxtInput" Width="750" Height="100" FontSize="18" />
+        </StackPanel>
+        <WrapPanel HorizontalAlignment="Center" Margin="0,181,0,0" Grid.RowSpan="2" Width="510">
+            <Button x:Name="InputAdd" Click="InputAdd_Click" Content="Přidej" Width="150" Height="50" FontSize="28" Margin="10"/>
+            <Button x:Name="InputLoad" Click="InputLoad_Click" Content="Načti" Width="150" Height="50" FontSize="28" Margin="10"/>
+            <Button x:Name="InputDelete" Click="InputDelete_Click" Content="Smaž" Width="150" Height="50" FontSize="28" Margin="10"/>
+        </WrapPanel>
+        <StackPanel Grid.Row="2">
+            <Label Content="Tvůj seznam:" FontSize="24"  Margin="10"/>
+            <TextBox x:Name="TxtOutput" Width="750" Height="440" FontSize="18"/>
+        </StackPanel>
+    </Grid>
+</Window>
