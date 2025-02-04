@@ -54,7 +54,12 @@ namespace ShopList
 
         private void InputDelete_Click(object sender, RoutedEventArgs e)
         {
+            string filePath = $"{Environment.CurrentDirectory}/file.json";
 
+            if (File.Exists(filePath))
+            {
+                File.Delete(filePath);
+            }
         }
     }
 }
