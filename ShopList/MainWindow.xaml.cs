@@ -60,6 +60,7 @@ namespace ShopList
             {
                 File.Delete(filePath);
             }
+            TxtOutput.Text = string.Empty;
         }
     }
 }

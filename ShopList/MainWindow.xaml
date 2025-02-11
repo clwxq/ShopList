@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
         <StackPanel>
             <Label Content="Zadej Item:" FontSize="24"  Margin="10"/>
-            <TextBox x:Name="TxtInput" Width="750" Height="100" FontSize="18" />
+            <TextBox x:Name="TxtInput" Width="750" Height="100" FontSize="18" TextWrapping="Wrap" TextAlignment="Justify" Padding="2"/>
         </StackPanel>
         <WrapPanel HorizontalAlignment="Center" Margin="0,181,0,0" Grid.RowSpan="2" Width="510">
             <Button x:Name="InputAdd" Click="InputAdd_Click" Content="Přidej" Width="150" Height="50" FontSize="28" Margin="10"/>
@@ -23,7 +23,7 @@
         </WrapPanel>
         <StackPanel Grid.Row="2">
             <Label Content="Tvůj seznam:" FontSize="24"  Margin="10"/>
-            <TextBox x:Name="TxtOutput" Width="750" Height="440" FontSize="18"/>
+            <TextBox x:Name="TxtOutput" Width="750" Height="440" FontSize="18" TextWrapping="Wrap" TextAlignment="Justify" Padding="2"/>
         </StackPanel>
     </Grid>
 </Window>
